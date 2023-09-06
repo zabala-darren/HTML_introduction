@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Intro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style type="text/css">
+    .form-style-4 {
+      width: 450px;
+      font-size: 16px;
+      background: #495c70;
+      padding: 30px 30px 15px 30px;
+      border: 5px solid #53687e;
+    }
+    .form-style-4 input[type="submit"],
+    .form-style-4 input[type="button"],
+    .form-style-4 input[type="text"],
+    .form-style-4 input[type="email"],
+    .form-style-4 textarea,
+    .form-style-4 label {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 16px;
+      color: #fff;
+    }
+    .form-style-4 label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .form-style-4 label > span {
+      display: inline-block;
+      float: left;
+      width: 150px;
+    }
+    .form-style-4 input[type="text"],
+    .form-style-4 input[type="email"] {
+      background: transparent;
+      border: none;
+      border-bottom: 1px dashed #a7b70f;
+      width: 275px;
+      outline: none;
+      padding: 0px 0px 0px 0px;
+      font-style: italic;
+    }
+    .form-style-4 textarea {
+      font-style: italic;
+      padding: 0px 0px 0px 0px;
+      background: transparent;
+      outline: none;
+      border: none;
+      border-bottom: 1px dashed #020a03;
+      width: 275px;
+      overflow: hidden;
+      resize: none;
+      height: 20px;
+    }
+
+    .form-style-4 textarea:focus,
+    .form-style-4 input[type="text"]:focus,
+    .form-style-4 input[type="email"]:focus,
+    .form-style-4 input[type="email"] :focus {
+      border-bottom: 1px dashed #d9ffa9;
+    }
+
+    .form-style-4 input[type="submit"],
+    .form-style-4 input[type="button"] {
+      background: #576e86;
+      border: none;
+      padding: 8px 10px 8px 10px;
+      border-radius: 5px;
+      color: #a8bace;
+    }
+    .form-style-4 input[type="submit"]:hover,
+    .form-style-4 input[type="button"]:hover {
+      background: #394d61;
+    }
+  </style>
+
+  <body>
+    <!-- This is h1 -->
+    <h1 style="background-color: rgba(0, 72, 229, 0.911)">This is Heading 1</h1>
+    <!-- h2 -->
+    <h2>This is Heading 2</h2>
+    <h3>This is Heading 3</h3>
+    <h4>This is Heading 4</h4>
+    <h5>This is Heading 5</h5>
+    <h6>This is Heading 6</h6>
+    <!-- Paragraph -->
+    <p>
+      <b>the national dish of the Philippines, which consists of chunks of meat, fish, or vegetables, marinated in vinegar, soy sauce, garlic, and spices and then stewed in the marinade</b>  <em></em> .
+     
+      <i></i>
+      
+    </p>
+    <a href="https://www.google.com/">google</a>
+    <br />
+    <hr />
+    <img src="images/a.jpeg" alt="abtract image" />
+    <hr />
+    <img src="images/a.jpeg" alt="abtract image" />
+    <hr />
+    <img src="images/a.jpeg" alt="abtract image" />
+    <hr />
+    <img src="images/a.jpeg" alt="abtract image" />
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <th>LPU</th>
+        <th>123456</th>
+        <th>Philippines</th>
+      </tr>
+      <tr>
+        <th>TIP</th>
+        <th>56789</th>
+        <th>Japan</th>
+      </tr>
+    </table>
+    <h3>An Unordered List</h3>
+    <ul>
+      <li>Coffee</li>
+      <li>Soda</li>
+      <li>Milk</li>
+      <li>Tea</li>
+      <li>Juice</li>
+    </ul>
+    <h3>How to cook adobo</h3>
+    <ol>
+      <li>
+        Get a pot and make it nice and hot over medium heat. Pour some oil and
+        sauté garlic and onions. Add pork and continue sautéing until cooked.
+      </li>
+      <li>
+        Pour Knorr Liquid Seasoning, water, vinegar, laurel leaves, sugar, and
+        pepper. Add 1pc Knorr Pork Cubes. Bring to a boil and reduce heat to a
+        simmer, make sure that you don't cover the pan to evaporate the vinegar.
+        Cook for 10 more minutes.
+      </li>
+      <li>
+        Remove the meat from the sauce and fry, to add extra crispiness and
+        color to the meat. Return the fried meat in sauce. Reheat and simmer
+        until sauce thickens.
+      </li>
+    </ol>
+    <h3>HTML Forms</h3>
+    <form action="">
+      <label for="">First Name:</label>
+      <input type="text" name="fname" placeholder="Input First Name" /><br />
+      <label for="">Password</label>
+      <input type="password" name="pwd" placeholder="Input Password" />
+    </form>
+
+    <form class="form-style-4" action="" method="post">
+      <label for="field1">
+        <span>Enter Your Name</span
+        ><input type="text" name="field1" required="true" />
+      </label>
+      <label for="field2">
+        <span>Email Address</span
+        ><input type="email" name="field2" required="true" />
+      </label>
+      <label for="field3">
+        <span>Short Subject</span
+        ><input type="text" name="field3" required="true" />
+      </label>
+      <label for="field4">
+        <span>Message to Us</span
+        ><textarea
+          name="field4"
+          onkeyup="adjust_textarea(this)"
+          required="true"
+        ></textarea>
+      </label>
+      <label> <span> </span><input type="submit" value="Send Letter" /> </label>
+    </form>
+  </body>
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+    //auto expand textarea
+    function adjust_textarea(h) {
+      h.style.height = "20px";
+      h.style.height = h.scrollHeight + "px";
+    }
+  </script>
+</html>
